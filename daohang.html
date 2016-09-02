@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"></meta>
+	<style type="text/css">
+	#d1>div{
+		border: 1px solid black;
+	    }
+	input{
+	    	width: 500px;
+	    	height:35px;
+	    }
+	.q1{
+       position: absolute;
+       top: 277px;
+       left:301px;
+	    }
+    #menu{
+			overflow: hidden;
+			width: 300px;
+			font-size: 14px;
+		}
+	img{
+			position: relative;
+			padding: 5px;
+		}
+	#menu,#menu ul{
+			list-style-type: none;
+			margin: 0px;
+			padding:0px;
+	    }
+	#menu>li{
+			float: left;
+		}
+	#menu li a{
+			display: block;
+			color: #fff;
+			padding:10px 16px;
+			border-right: 1px solid #fff; 
+			text-decoration: none;
+			color: black;
+		}
+	#menu li a:hover{
+			background-color:grey;
+	    }
+	#menu li ul li a{
+			border-top: 1px solid #fff;
+		}
+	#menu ul{
+			display: none;
+			position: absolute;
+		}
+	#menu li:hover ul{
+          display: block;
+	    }
+	.d2{
+	    	color: red;
+	    	font-size: 30px;
+	    	position: relative;
+	    	left: 100px;
+	    	top: 10px;
+	    }
+	.d4 li {
+	    	float: left;
+	    	border: 2px solid green;
+	    	list-style-type: none;
+	    	width:105px;
+	    	height: 30px;
+	    	text-align:center;
+	    	font-size: 20px;
+	    	border-left: 1px solid green; 
+	    	border-top: none;
+	    	border-right:none; 
+	    	border-bottom:none; 
+	    	position:relative;
+	    	top: 5px;
+	    	left: -35px;
+        }
+    .d4 li a:hover{
+             color: green;
+        }
+    .d5 li{
+	    	float: left;
+	    	border: 1px solid green;
+	    	list-style: none;
+	    	width:81px;
+	    	height: 30px;
+	    	text-align:center;
+	    	font-size: 15px;
+	    	border:none;
+            position:relative;
+	    	top: -5px;
+	    	left: -35px;
+        }
+    .d5 li a, .d4 li a{
+         text-decoration:none;
+
+        }
+    .d5 li a:hover{
+             color: red;
+        }
+    .d6 .d7,.d8,.d9{
+          float: left;
+          list-style-type: none;padding: 2px;
+        }
+    .d6 .d7 li a:hover,.d6 .d9 li a:hover{
+        	color: red;
+        }
+    .d10 .d11,.d12,.d13{
+         	position: relative;
+          float: left;
+          list-style-type: none;
+          padding: 2px;
+        }
+    .d6{
+        	position: relative;
+        	left: 20px;
+        	top: 15px;
+        }
+    .d10 .d11 li a:hover,.d10 .d13 li a:hover{
+        	color: red;
+        }
+    .d10{
+        	position:relative;
+        	left: 75px;
+        	top: 15px;
+        }
+    .a1 a{
+        	position: relative;
+        }
+    .a2 ul li{
+        	float: left;
+        	list-style-type: none;
+        	width: 125px;
+        	height:30px;
+        }
+    .a2 ul li a{
+        	text-decoration: none;
+        }
+    .a3{
+        	color: red;
+        }
+    .a4{
+        	color:green;
+        }
+    .a2 li a:hover{
+        	color: red;
+        	text-decoration:underline;
+        }
+    .a2 li a .a4:hover{
+        	color: green;
+        	text-decoration:underline;
+        }
+    .d7 li a,.d9 li a{
+        	text-decoration:none;
+        }
+    .d11 li a,.d13 li a{
+        	text-decoration:none;
+        }
+    .a5{
+        	width: 100px;
+        	height: 40px;
+        }
+    .a6{
+        	position:absolute;
+        	top: 30px;
+        	left: 200px;
+        	width: 70px;
+        	height:30px;
+        }
+    .a7{
+        	background-color: green;
+             color: white;
+        }
+    .a8{
+           color: green;
+        }
+    .w1{
+         position: absolute;
+         top: 25px;
+         left: 320px;
+        }
+        .a9 .e1 li{
+        	float: left;
+        	list-style-type: none;
+        	width: 50px;
+        	height: 25px;
+        }
+        .a9 .e1 li a{
+        	text-decoration:none;
+        }
+        .a9{
+        	position: absolute;
+        	top: 22px;
+        	left: 600px;
+        }
+        .a9 .e1 .e2{
+        	width: 150px;
+        	height: 25px;
+        }
+        .a9 .e1 li:hover{
+        	background-color: grey;
+        }
+	</style>
+</head>
+<body>
+<div id="d1">
+	<div style="width:1100px;height:170px;">
+		<div> 
+			<a href="">
+			    <img src="../0.jpg" width="170px" height="70px">
+			</a>
+			<select class="a6">
+				<option><a href="">哈尔滨</a> </option>
+				<option><a href="">佳木斯</a></option>
+				<option><a href="">齐齐哈尔</a></option>
+				<option><a href="">伊春</a></option>
+				<option><a href="">绥化</a></option>
+				<option><a href="">鸡西</a></option>
+				<option><a href="">双鸭山</a></option>
+				<option><a href="">鹤岗</a></option>
+				<option><a href="">牡丹江</a></option>
+				<option><a href="">黑河</a></option>
+				<option><a href="">七台河</a></option>
+				<option><a href="">大庆</a></option>
+				<option><a href="">大兴安岭</a></option>
+			</select>
+		</div>
+		<div class="w1">
+		    <ul id="menu">
+				<li><a href="">9月01日&nbsp;周四&nbsp;八月初一</a>
+					<ul>
+						<li><a href="">9月02日&nbsp;周五&nbsp;八月初二</a></li>
+						<li><a href="">9月03日&nbsp;周六&nbsp;八月初三</a></li>
+						<li><a href="">9月04日&nbsp;周日&nbsp;八月初四</a></li>
+					</ul>
+				</li>
+				<li><a href="">星座</a>
+					<ul>
+						<li><a href="">射手</a></li>
+						<li><a href="">处女</a></li>
+						<li><a href="">天蝎</a></li>
+					</ul>
+				</li>
+	        </ul>
+	    </div>
+	    <div class="a9">
+	    	<ul class="e1">
+	    	    <li><a href="">登录</a></li>
+	    		<li><a href="">云盘</a></li>
+	    		<li><a href="">邮箱</a></li>
+	    		<li><a href="">浏览器</a></li>
+	    		<li><a href="">换肤</a></li>
+	    		<li class="e2"><a href="">这个姿势真的好吗？</a></li>
+	    	</ul>
+	    </div>
+        <hr>
+	    <div class="d2">Baidu百度 &nbsp;<input type="text" name=""><button class="a5">百度一下</button>
+	    </div>
+	</div>
+	<div style="width:1100px;height:95px;">
+		<div>
+			<ul class="d4">
+				<li><a href=""><span class="a7">首页</span></a> </li>
+				<li><a href="">电视剧</a></li>
+				<li><a href="">最新电影</a></li>
+				<li><a href="">新闻头条</a></li>
+				<li><a href="">八卦娱乐</a></li>
+				<li><a href="">军事热点</a></li>
+				<li><a href="">热门游戏</a></li>
+				<li><a href="">小游戏</a></li>
+				<li><a href="">今日特价</a></li>
+				<li><a href="">特价旅游</a></li>
+			</ul>
+		</div><br><br> <hr>
+		<div>	
+		    <ul class="d5">
+				<li><a href=""><span class="a8"> 权威推荐</span></a></li>
+				<li><a href="">人民网</a></li>
+				<li><a href="">新华网</a></li>
+				<li><a href="">央视网</a></li>
+				<li><a href="">国际在线</a></li>
+	            <li><a href="">中国日报网</a></li>
+				<li><a href="">中国网</a></li>
+				<li><a href="">中国经济网</a></li>
+				<li><a href="">光明网</a></li>
+				<li><a href="">央广网</a></li>
+				<li><a href="">求是网</a></li>
+				<li><a href="">中国青年网</a></li>
+				<li><a href="">中国网信网</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="width:290px;height:250px;">
+	   <div class="a1">
+	        <a href=""> 
+	            <img src="../1.jpg" width="280px" height="80px">
+	        </a>
+	   </div>
+	   <hr>
+		<div class="d6">
+			<ul class="d7">
+				<li><a href="">电视剧</a></li>
+				<li><a href="">电影</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">彩票</a></li>
+				<li><a href="">特价</a></li>
+			</ul>
+			<ul class="d8">
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+			</ul>
+			<ul class="d9">
+				<li><a href="">综艺</a></li>
+				<li><a href="">直播</a></li>
+				<li><a href="">军事</a></li>
+				<li><a href="">股票</a></li>
+				<li><a href="">手机</a></li>
+			</ul>
+		</div>
+		<div class="d10">
+			<ul class="d11">
+				<li><a href="">游戏</a></li>
+				<li><a href="">动画</a></li>
+				<li><a href="">旅游</a></li>
+				<li><a href="">搞笑</a></li>
+				<li><a href="">教育</a></li>
+			</ul>
+			<ul class="d12">
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+				<li>|</li>
+			</ul>
+			<ul class="d13">
+				<li><a href="">小游戏</a></li>
+				<li><a href="">漫画</a></li>
+				<li><a href="">音乐</a></li>
+				<li><a href="">小说</a></li>
+				<li><a href="">理财</a></li>
+			</ul>
+		</div>			
+	</div>
+	<div class="q1" style="width:808px;height:250px;">
+	    <div class="a2">
+	    	<ul>
+	    		<li><a href=""> <img src="../1.jpg" width="15px" height="15px"></a><a href="">百度贴吧</a> </li>
+	    		<li><a href=""><img src="../1.jpg" width="15px" height="15px"></a><a href="">新浪微博</a></li>
+	    		<li><a href=""><img src="../1.jpg" width="15px" height="15px"></a><a href="">搜狐热点</a></li>
+	    		<li><a href=""><img src="../1.jpg" width="15px" height="15px"></a><a href="">腾讯</a></li>
+	    		<li><a href=""><img src="../1.jpg" width="15px" height="15px"></a><a href="">网易</a></li>
+                <li><a href=""><img src="../1.jpg" width="15px" height="15px"></a><a href="">优酷网</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">天猫</a> </li>
+	    		<li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">凤凰网</a></li>
+	    		<li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">淘宝网</a></li>
+	    		<li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">免费游戏</a></li>
+	    		<li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">4399游戏</a></li>
+                <li><a href=""><img src="../2.jpg" width="15px" height="15px"></a><a href="">体育NBA</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">京东商城</a> </li>
+	    		<li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">苏宁易购</a></li>
+	    		<li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">今日特价</a></li>
+	    		<li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">hao123影视</a></li>
+	    		<li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">汽车之家</a></li>
+                <li><a href=""><img src="../3.jpg" width="15px" height="15px"></a><a href="">聚划算</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href="">东方财富理财</a> </li>
+	    		<li><a href="">58同城</a></li>
+	    		<li> <a href=""><span class="a3">搜房网</span></a></li>
+	    		<li><a href="">携程旅行网</a></li>
+	    		<li><a href="">百度地图</a></li>
+                <li><a href="">12306旅游</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href="">世纪佳缘</a> </li>
+	    		<li><a href=""><span class="a3">赶集网</span></a></li>
+	    		<li><a href="">易车网</a></li>
+	    		<li><a href="">彩票开奖</a></li>
+	    		<li><a href="">太平洋汽车</a></li>
+                <li><a href="">萌主页</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href="">唯品会</a> </li>
+	    		<li><a href="">hao到家</a></li>
+	    		<li><a href="">途牛旅游网</a></li>
+	    		<li><a href="">微信网页版</a></li>
+	    		<li><a href="">头条新闻</a></li>
+                <li><a href="">直播吧开服表</a></li>
+	    	</ul>
+	    	<ul>
+	    		<li><a href=""><span class="a4"> 苏宁手机馆</span></a> </li>
+	    		<li><a href=""><span class="a4">国美在线</span></a></li>
+	    		<li><a href=""><span class="a4">1号店</span></a></li>
+	    		<li><a href=""><span class="a4">阿里旅行</span></a></li>
+	    		<li><a href=""><span class="a4">爱淘宝</span></a></li>
+                <li><a href=""><span class="a4">购物手机</span></a></li>
+	    	</ul>
+	    </div>
+	</div>
+</div>
+</body>
+</html>
